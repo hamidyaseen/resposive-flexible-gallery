@@ -1,0 +1,175 @@
+body {
+  /*background: orange;*/
+  margin: initial;
+}
+
+.contents {
+  display: flex;
+  margin: 0px auto;
+  align-items: center; /*flex-start*/
+
+  background-color: lightcoral;
+  /*border: 1px solid black;*/
+}
+
+/*@media screen and (min-width: 768px) {
+  .contents{
+    width: 740px;
+  }} 
+@media screen and (min-width: 992px) {
+  .contents{
+    width: 970px;    
+  }}
+
+@media screen and (min-width: 1200px) {
+    .contents{
+      width: 1170px;    
+    }}
+@media screen and (min-width: 1400px) {
+      .contents{
+        width: 1380px;    
+      }}*/
+
+.contents-v {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  width: 98%;
+}
+
+.contents-h {
+  background-color: lightgreen;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+    /*width: 97%;*/
+}
+
+
+
+.flex-container {
+  display: flex; 
+  flex-wrap: nowrap;
+  
+  background-color: DodgerBlue;
+  border: 1px solid black;
+  margin: 3px;
+}
+
+.flex-container-gallery {
+  width: 97%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-container-linkedIn {
+  flex-direction: column;
+  flex: 1 0 auto;
+  /* As container has only one itme per line, so no need to justify or align*/  
+  /*align-items: center;*/
+  /*justify-content: center;*/
+}
+
+.flex-container-linkedIn > .list-item
+ {
+  background-color: #f1f1f1;
+  margin: 11px;
+  /*border: 1px solid yellow;  */
+  text-align: center;
+ /* line-height: 75px;
+  font-size: 30px;
+  width: 97%;*/
+  
+
+  
+  border-radius: 5%;
+}
+
+.flex-container > .gallery-item
+ {
+  background-color: #f1f1f1;  
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container > .gallery-item-3
+ {
+   /* 1% margin for each side of item means ,
+   6% for the all three items in a row, So 93%+ 6% is total 99%*/
+  /*width: 221px;;*/   
+  width: 31%; /*for three item per line */
+  margin: 1%; 
+  
+}
+.flex-container > .gallery-item-4
+ {
+     width: 23%; /*for three item per line */
+    margin: 1%;
+}
+
+.flex-container > .gallery-item-v {
+     width: 98%;
+     margin: 1%;
+     max-width: 540px;
+}
+@media screen and (min-width: 576px){
+  .flex-container > .gallery-item-v {
+    max-width: 48%;
+  }
+}
+@media screen and (min-width : 768px) {
+    .flex-container > .gallery-item-v {
+      max-width: 31%;
+    }
+}
+@media screen and (min-width : 992px) {
+  .flex-container > .gallery-item-v {
+    max-width: 23%;
+  }
+}
+@media screen and (min-width: 1200px){
+  .flex-container > .gallery-item-v {
+    max-width: 18%;
+  }
+}
+@media screen and (min-width: 1600px){
+  .flex-container > .gallery-item-v {
+    max-width: 14.5%;
+  }
+}
+
+.full-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*
+@media screen and (min-width: 576px){
+  .flex-container > .gallery-item-v {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 768px){
+  .flex-container > .gallery-item-v {
+    width: 31%;
+  }
+}
+@media screen and (min-width: 992px){
+  .flex-container > .gallery-item-v {
+    width: 23%;
+  }
+}
+@media screen and (min-width: 1200px){
+  .flex-container > .gallery-item-v {
+    width: 18%;
+  }
+}
+@media screen and (min-width: 1600px){
+  .flex-container > .gallery-item-v {
+    width: 14.5%;
+  }
+}*/
