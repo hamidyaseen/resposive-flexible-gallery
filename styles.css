@@ -1,6 +1,8 @@
 body {
   /*background: orange;*/
   margin: initial;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
 }
 
 .contents {
@@ -80,10 +82,7 @@ body {
   text-align: center;
  /* line-height: 75px;
   font-size: 30px;
-  width: 97%;*/
-  
-
-  
+  width: 97%;*/  
   border-radius: 5%;
 }
 
@@ -91,8 +90,9 @@ body {
  {
   background-color: #f1f1f1;  
   text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+  /*line-height: 75px;
+  font-size: 30px;*/
+  min-height: 100px;  
 }
 
 .flex-container > .gallery-item-3
@@ -114,6 +114,7 @@ body {
      width: 98%;
      margin: 1%;
      max-width: 540px;
+     max-height: 313px;  
 }
 @media screen and (min-width: 576px){
   .flex-container > .gallery-item-v {
@@ -139,6 +140,18 @@ body {
   .flex-container > .gallery-item-v {
     max-width: 14.5%;
   }
+}
+/* Setting height of card-image set the max heigh for flex-item
+  So images are not very big in vertical direction.
+*/
+.card-header {
+  /*background-color: lightseagreen;*/
+  text-align:  initial;
+  margin-left: 7%; 
+}
+.card-image {
+  width: 100%;
+  height: 250px;
 }
 
 .full-image {
